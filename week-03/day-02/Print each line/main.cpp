@@ -7,29 +7,28 @@ int main () {
   // each line from the file.
   // You will have to create the file, you may use C-programming, although it is not mandatory
 
-  std::fstream myFile ("../my-file2.txt");
+  //std::fstream myFile ("../my-file2.txt");
   //if (myFile.is_open())
   //{
-  myFile << "First line.\n";
+  //myFile << "First line.\n";
   //myFile << "Second line.\n";
-  myFile.close();
+  //myFile.close();
   //}
   //else std::cout << "Unable to open file";
 
-  std::string line;
+  std::ifstream myFile;
+  myFile.exceptions(std::ifstream::badbit);
 
-  if (myFile.is_open())
-  {
-    while ( getline (myFile,line) )
-    {
-      std::cout << line << '\n';
+  try {
+    myFile.open("../my-file.txt");
+    std::string text;
+    while(  getline(myFile, text)) {
+      std::cout << text << std::endl;
     }
     myFile.close();
+  } catch (std::ifstream::failure& e) {
+    std::cerr << e.what() << std::endl;
   }
-
-  else std::cout << "Unable to open file";
-
-
 
   return 0;
 }
