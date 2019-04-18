@@ -5,16 +5,12 @@ int main() {
 
   Animal dog;
   dog.play();
-  std::cout << "Dog's hunger: " << dog.getHunger() << std::endl
-            << "Dog's thirst: " << dog.getThirst() << std::endl;
+  std::cout << "Dog's hunger: " << dog.gethunger() << std::endl
+            << "Dog's thirst: " << dog.getthirst() << std::endl;
 
   Animal cat;
   cat.drink();
-  std::cout << "Cat's thirst: " << cat.getThirst() << std::endl;
-
-  Animal lion;
-  lion.eat();
-  std::cout << "Lion's hunger: " << lion.getHunger() << std::endl;
+  std::cout << "Cat's thirst: " << cat.getthirst() << std::endl;
 
   return 0;
 }

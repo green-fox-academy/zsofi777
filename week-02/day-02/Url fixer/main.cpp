@@ -1,19 +1,19 @@
 #include <iostream>
 #include <string>
 
-int main(int argc, char* args[])
-{
-    std::string url("https//www.reddit.com/r/nevertellmethebots");
-                    // https://www.reddit.com/r/nevertellmetheodds/
+int main(int argc, char *args[]) {
+  std::string url("https//www.reddit.com/r/nevertellmethebots");
+  // https://www.reddit.com/r/nevertellmetheodds/
 
-    // Accidentally I got the wrong URL for a funny subreddit. It's probably "odds" and not "bots"
-    // Also, the URL is missing a crucial component, find out what it is and insert it too!
+  // Accidentally I got the wrong URL for a funny subreddit. It's probably
+  // "odds" and not "bots" Also, the URL is missing a crucial component, find
+  // out what it is and insert it too!
 
-    url.replace(38, 41, "odds");
+  url.replace(38, 41, "odds");
 
-    url.insert (5, ":");
+  url.insert(5, ":");
 
-    std::cout << url << std::endl;
+  std::cout << url << std::endl;
 
-    return 0;
+  return 0;
 }

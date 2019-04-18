@@ -3,29 +3,30 @@
 Animal::Animal() {
   _hunger = 50;
   _thirst = 50;
+  const _InkAmount = 100;
 }
 
-int Animal::getHunger() { return _hunger; }
+int Animal::gethunger() { return _hunger; }
 
-int Animal::getThirst() { return _thirst; }
+int Animal::getthirst() { return _thirst; }
 
-void Animal::setHunger(int hunger) { _hunger = hunger; }
+void Animal::sethunger(int hunger) { _hunger = hunger; }
 
-void Animal::setThirst(int thirst) { _thirst = thirst; }
+void Animal::setthirst(int thirst) { _thirst = thirst; }
 
 void Animal::eat() {
-  int food = getHunger();
-  setHunger(food - 1);
+  int food = gethunger();
+  sethunger(food - 1);
 }
 
 void Animal::drink() {
-  int water = getThirst();
-  setThirst(water - 1);
+  int water = getthirst();
+  setthirst(water - 1);
 }
 
 void Animal::play() {
-  int food = getHunger();
-  setHunger(food + 1);
-  int water = getThirst();
-  setThirst(water + 1);
+  int food = gethunger();
+  sethunger(food + 1);
+  int water = getthirst();
+  setthirst(water + 1);
 }

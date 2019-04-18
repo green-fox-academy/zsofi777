@@ -6,11 +6,11 @@ class Animal {
 public:
   Animal();
 
-  int getHunger();
-  int getThirst();
+  int gethunger();
+  int getthirst();
 
-  void setHunger(int hunger);
-  void setThirst(int thirst);
+  void sethunger(int hunger);
+  void setthirst(int thirst);
 
   void eat();
   void drink();

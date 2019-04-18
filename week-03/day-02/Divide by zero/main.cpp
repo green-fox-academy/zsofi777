@@ -1,7 +1,7 @@
-#include <iostream>
 #include <fstream>
+#include <iostream>
 
-void divide (int number);
+void divide(int number);
 
 int main() {
   // Create a function that takes a number
@@ -13,22 +13,17 @@ int main() {
   std::cout << "Enter a number\n";
   std::cin >> number;
 
-  divide (number);
+  divide(number);
 
   return 0;
 }
-void divide (int number)
-{
+void divide(int number) {
   try {
-    if (number == 0)
-    {
+    if (number == 0) {
       throw 99;
     }
-  }
-  catch(int x){
-    std::cout << "can't divide by zero, error number: 99" <<std::endl;
+  } catch (int x) {
+    std::cout << "can't divide by zero, error number: 99" << std::endl;
   }
   std::cout << 10 / number << std::endl;
-
-
 }

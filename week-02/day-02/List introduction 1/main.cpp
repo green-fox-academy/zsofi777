@@ -2,67 +2,61 @@
 #include <string>
 #include <vector>
 
-
 int main() {
 
-    //create vector, print elements
+  // create vector, print elements
 
-    std::vector<std::string> myVector;
+  std::vector<std::string> myVector;
 
+  for (int i = 0; i < myVector.size(); ++i) {
+    std::cout << myVector.at(i) << std::endl;
+  }
 
-    for (int i = 0; i < myVector.size(); ++i) {
-        std::cout << myVector.at(i) << std::endl;
-    }
+  // add element
 
-    //add element
+  myVector.push_back("William");
+  // std::cout << myVector.at(0) << std::endl;
 
-    myVector.push_back("William");
-   // std::cout << myVector.at(0) << std::endl;
+  // see if empty
 
-    //see if empty
-
-    //if (myVector.empty()) {
-        //std::cout << "empty";
-    //} else {
-        //std::cout << "not empty";
+  // if (myVector.empty()) {
+  // std::cout << "empty";
+  //} else {
+  // std::cout << "not empty";
   // }
 
-   // std::cout << std::endl;
+  // std::cout << std::endl;
 
-    //add 2 element, print
+  // add 2 element, print
 
-    myVector.push_back("John");
-    myVector.push_back("Amanda");
+  myVector.push_back("John");
+  myVector.push_back("Amanda");
 
-    for (int i = 0; i < myVector.size(); ++i) {
-        std::cout << myVector.at(i) << std::endl;
-    }
+  for (int i = 0; i < myVector.size(); ++i) {
+    std::cout << myVector.at(i) << std::endl;
+  }
 
+  // print 3rd element
 
+  // std::cout << myVector.at(2) << std::endl;
 
-    //print 3rd element
+  // Iterate through the list and print out each name
 
-   // std::cout << myVector.at(2) << std::endl;
+  // and remove the 2nd element
+  // myVector.erase(myVector.begin()+1);
 
-   //Iterate through the list and print out each name
+  // and remove all element
+  // myVector.clear();
 
-    // and remove the 2nd element
-    // myVector.erase(myVector.begin()+1);
+  std::vector<std::string>::iterator itVec = myVector.begin();
+  for (; itVec != myVector.end(); ++itVec) {
+    std::cout << *itVec << std::endl;
+  }
 
-    // and remove all element
-    //myVector.clear();
+  // for (unsigned int i = 0; i < myVector.size(); ++i) {
+  //  std::cout << i+1 //MERT 1-TŐL ÉS NEM 0-TÓL AKAROM// << "." << " ";
+  // std::cout << myVector [i] << std::endl;
+  // }
 
-   std::vector<std::string>::iterator itVec = myVector.begin();
-    for (;itVec != myVector.end(); ++itVec) {
-        std::cout << *itVec << std::endl;}
-
-
-   // for (unsigned int i = 0; i < myVector.size(); ++i) {
-      //  std::cout << i+1 //MERT 1-TŐL ÉS NEM 0-TÓL AKAROM// << "." << " ";
-       // std::cout << myVector [i] << std::endl;
-   // }
-
-
-
-    return 0;
+  return 0;
 }

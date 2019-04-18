@@ -58,10 +58,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.1\bin\cmake\win\bin\cmake.exe" -E re
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Szonja-asus\Documents\greenfox\zsofi777\week-01\day-03\CountFromTo
+CMAKE_SOURCE_DIR = C:\Users\Szonja-asus\Documents\greenfox\week-01\day-03\CountFromTo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Szonja-asus\Documents\greenfox\zsofi777\week-01\day-03\CountFromTo\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Szonja-asus\Documents\greenfox\week-01\day-03\CountFromTo\cmake-build-debug
 
 #=============================================================================
 # Target rules for target CMakeFiles/CountFromTo.dir
@@ -70,7 +70,7 @@ CMAKE_BINARY_DIR = C:\Users\Szonja-asus\Documents\greenfox\zsofi777\week-01\day-
 CMakeFiles/CountFromTo.dir/all:
 	$(MAKE) -f CMakeFiles\CountFromTo.dir\build.make CMakeFiles/CountFromTo.dir/depend
 	$(MAKE) -f CMakeFiles\CountFromTo.dir\build.make CMakeFiles/CountFromTo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Szonja-asus\Documents\greenfox\zsofi777\week-01\day-03\CountFromTo\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target CountFromTo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Szonja-asus\Documents\greenfox\week-01\day-03\CountFromTo\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target CountFromTo"
 .PHONY : CMakeFiles/CountFromTo.dir/all
 
 # Include target in all.
@@ -80,9 +80,9 @@ all: CMakeFiles/CountFromTo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CountFromTo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Szonja-asus\Documents\greenfox\zsofi777\week-01\day-03\CountFromTo\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Szonja-asus\Documents\greenfox\week-01\day-03\CountFromTo\cmake-build-debug\CMakeFiles 2
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/CountFromTo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Szonja-asus\Documents\greenfox\zsofi777\week-01\day-03\CountFromTo\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Szonja-asus\Documents\greenfox\week-01\day-03\CountFromTo\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/CountFromTo.dir/rule
 
 # Convenience name for target.

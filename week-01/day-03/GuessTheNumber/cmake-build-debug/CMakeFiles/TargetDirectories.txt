@@ -1,3 +1,0 @@
-C:/Users/Szonja-asus/Documents/greenfox/zsofi777/week-01/GuessTheNumber/cmake-build-debug/CMakeFiles/GuessTheNumber.dir
-C:/Users/Szonja-asus/Documents/greenfox/zsofi777/week-01/GuessTheNumber/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Szonja-asus/Documents/greenfox/zsofi777/week-01/GuessTheNumber/cmake-build-debug/CMakeFiles/rebuild_cache.dir
