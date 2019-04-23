@@ -3,7 +3,7 @@
 
 int main(int argc, char *args[]) {
 
-  // - Create a two dimensional array
+  //- Create a two dimensional array
   //   which can contain the different shades of specified colors
   // - In `colors[0]` store the shades of green:
   //   `"lime", "forest green", "olive", "pale green", "spring green"`

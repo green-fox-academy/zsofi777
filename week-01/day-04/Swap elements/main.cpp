@@ -3,7 +3,7 @@
 
 int main(int argc, char *args[]) {
 
-  // - Create an array variable named `abc`
+  //- Create an array variable named `abc`
   //   with the following content: `["first", "second", "third"]`
   // - Swap the first and the third element of `abc`
 

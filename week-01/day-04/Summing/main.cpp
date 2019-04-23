@@ -5,7 +5,7 @@ int sum(int);
 
 int main(int argc, char *args[]) {
 
-  // Write a function called `sum` that returns the sum of numbers from zero to
+  //Write a function called `sum` that returns the sum of numbers from zero to
   // the given parameter
 
   int yourNum;

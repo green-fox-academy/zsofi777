@@ -5,7 +5,7 @@ int factorio(int &);
 
 int main(int argc, char *args[]) {
 
-  // - Create a function called `factorio`
+  //- Create a function called `factorio`
   //   it should calculate its input's factorial.
   //   it should not return it, but take an additional integer parameter and
   //   overwrite its value.
