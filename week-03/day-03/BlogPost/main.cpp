@@ -1,7 +1,7 @@
 #include "BlogPost.h"
 #include <iostream>
 
-// title,authorName,publicationDate,text
+//title,authorName,publicationDate,text
 
 int main() {
 
@@ -20,3 +20,4 @@ int main() {
 
   return 0;
 }
+

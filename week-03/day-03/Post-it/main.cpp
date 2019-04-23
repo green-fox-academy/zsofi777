@@ -1,7 +1,7 @@
 #include "PostIt.h"
 #include <iostream>
 
-// Create a PostIt class that has
+//Create a PostIt class that has
 // a backgroundColor
 // a text on it
 // a textColor

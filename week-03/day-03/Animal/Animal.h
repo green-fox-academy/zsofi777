@@ -4,21 +4,27 @@
 
 class Animal {
 public:
-  Animal();
 
-  int gethunger();
-  int getthirst();
 
   void sethunger(int hunger);
+
   void setthirst(int thirst);
 
+  int gethunger();
+
+  int getthirst();
+
   void eat();
+
   void drink();
+
   void play();
 
 private:
-  int _hunger;
-  int _thirst;
+  int _hunger = 50;
+  int _thirst = 50;
+
 };
 
-#endif // INC_3__ANIMAL_ANIMAL_H
+
+#endif //ANIMAL_ANIMAL_H
