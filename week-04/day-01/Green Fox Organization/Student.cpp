@@ -19,3 +19,5 @@ void Student::getGoal() {
   std::cout << "My goal is: Be a junior software developer." << std::endl;
 }
 void Student::skipDays(int numberOfDays) { _skippedDays += numberOfDays; }
+
+//////////////////////////

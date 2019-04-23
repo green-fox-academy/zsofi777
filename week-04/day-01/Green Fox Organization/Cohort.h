@@ -19,3 +19,5 @@ private:
 };
 
 #endif // GREEN_FOX_ORGANIZATION_COHORT_H
+
+//////////////////////////

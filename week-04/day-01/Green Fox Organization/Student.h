@@ -18,3 +18,5 @@ public:
 };
 
 #endif // GREEN_FOX_ORGANIZATION_STUDENT_H
+
+//////////////////////////

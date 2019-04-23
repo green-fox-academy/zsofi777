@@ -20,3 +20,5 @@ void Sponsor::getGoal() {
             << std::endl;
 }
 void Sponsor::hire() { _hiredStudents++; }
+
+//////////////////////////

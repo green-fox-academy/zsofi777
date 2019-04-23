@@ -22,3 +22,5 @@ public:
 };
 
 #endif // GREEN_FOX_ORGANIZATION_PERSON_H
+
+//////////////////////////

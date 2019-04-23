@@ -17,3 +17,5 @@ public:
 };
 
 #endif // GREEN_FOX_ORGANIZATION_SPONSOR_H
+
+//////////////////////////
