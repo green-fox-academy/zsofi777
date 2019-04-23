@@ -4,7 +4,7 @@
 
 void writeLines(std::string, std::string, int);
 
-// Create a function that takes 3 parameters: a path, a word and a number
+//Create a function that takes 3 parameters: a path, a word and a number
 // and is able to write into a file.
 // The path parameter should be a string that describes the location of the file
 // you wish to modify The word parameter should also be a string that will be
