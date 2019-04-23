@@ -4,7 +4,7 @@
 
 int main() {
 
-  // create vector, print elements
+  //create vector, print elements
 
   std::vector<std::string> myVector;
 

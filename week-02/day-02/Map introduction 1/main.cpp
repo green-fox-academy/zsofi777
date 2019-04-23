@@ -6,7 +6,7 @@ int main() {
 
   std::map<int, std::string> myMap;
 
-  // see if empty
+  //see if empty
 
   if (myMap.empty()) {
     std::cout << "empty";

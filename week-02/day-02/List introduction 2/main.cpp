@@ -5,7 +5,7 @@
 
 int main() {
 
-  // Create a list ('List A') which contains the following values
+  //Create a list ('List A') which contains the following values
   // Apple, Avocado, Blueberries, Durian, Lychee
   // Create a new list ('List B') with the values of List A
 

@@ -3,7 +3,7 @@
 
 int main(int argc, char *args[]) {
   std::string url("https//www.reddit.com/r/nevertellmethebots");
-  // https://www.reddit.com/r/nevertellmetheodds/
+  //https://www.reddit.com/r/nevertellmetheodds/
 
   // Accidentally I got the wrong URL for a funny subreddit. It's probably
   // "odds" and not "bots" Also, the URL is missing a crucial component, find
