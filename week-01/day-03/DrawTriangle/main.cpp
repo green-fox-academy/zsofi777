@@ -4,7 +4,6 @@ int main(int argc, char *args[]) {
 
   // Write a program that reads a number from the standard input, then draws a
   // triangle like this:
-  //
   // *
   // **
   // ***

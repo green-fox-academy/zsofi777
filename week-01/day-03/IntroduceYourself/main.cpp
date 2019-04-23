@@ -6,7 +6,6 @@ int main(int argc, char const *argv[]) {
   //  - Your name
   //  - Your age
   //  - Your height in meters (as a decimal fraction)
-  //
   //  Example output:
   //  John Doe
   //  31

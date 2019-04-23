@@ -4,8 +4,8 @@ void greet(std::string);
 
 int main(int argc, char *args[]) {
 
-  // Modify this program to greet user instead of the World!
-  // The program should ask for the name of the user
+  //Modify this program to greet user instead of the World!
+  //The program should ask for the name of the user
 
   std::string name;
   greet(name);

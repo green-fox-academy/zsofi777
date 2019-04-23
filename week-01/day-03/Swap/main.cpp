@@ -4,7 +4,7 @@ void swap(int a, int b);
 
 int main(int argc, char *args[]) {
 
-  // Swap the values of the variables
+  //Swap the values of the variables
 
   int a = 123;
   int b = 526;

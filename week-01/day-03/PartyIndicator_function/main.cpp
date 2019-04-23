@@ -8,7 +8,6 @@ void party(int boys, int girls);
 // It should print: The party is excellent!
 // If the the number of girls and boys are equal and 20 or more people are
 // coming to the party
-//
 // It should print: Quite cool party!
 // If there are 20 or more people coming to the party but the girl - boy ratio
 // is not 1-1

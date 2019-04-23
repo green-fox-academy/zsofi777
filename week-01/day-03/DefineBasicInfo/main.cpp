@@ -7,7 +7,6 @@ int main(int argc, char *args[]) {
   // Your age as an integer
   // Your height in meters as a double
   // Whether you are married or not as a boolean
-
   // string
   std::string myName = "Zsofia Kovago";
   std::cout << myName << std::endl;

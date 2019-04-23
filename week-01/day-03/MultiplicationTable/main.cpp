@@ -4,7 +4,6 @@ int main(int argc, char *args[]) {
 
   // Create a program that asks for a number and prints the multiplication table
   // with that number
-  //
   // Example:
   // The number 15 should print:
   //

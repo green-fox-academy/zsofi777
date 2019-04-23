@@ -2,7 +2,7 @@
 
 int main(int argc, char *args[]) {
 
-  // Write a program that reads a number form the standard input,
+  //Write a program that reads a number form the standard input,
   // If the number is zero or smaller it should print: Not enough
   // If the number is one it should print: One
   // If the number is two it should print: Two

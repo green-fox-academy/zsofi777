@@ -3,7 +3,6 @@
 int main(int argc, char *args[]) {
 
   // Create a program that draws a chess table like this
-  //
   // % % % %
   //  % % % %
   // % % % %

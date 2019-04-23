@@ -2,8 +2,8 @@
 
 int main() {
 
-  // Write a program that prints the remaining seconds (as an integer) from a
-  // day if the current time is represented by the variables
+  //Write a program that prints the remaining seconds (as an integer) from a
+  //day if the current time is represented by the variables
 
   int currentHours = 14;
   int currentMinutes = 34;
