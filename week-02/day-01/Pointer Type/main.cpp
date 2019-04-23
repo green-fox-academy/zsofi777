@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main() {
-  // Create a pointer for each variable and print out the memory addresses of
+  //Create a pointer for each variable and print out the memory addresses of
   // that variables Print out the values of the pointers
 
   int a = 31;

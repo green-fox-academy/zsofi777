@@ -5,7 +5,7 @@ void print(int *array, int x);
 //*array=array
 
 int main() {
-  // Create a program which accepts five integers from the console (given by the
+  //Create a program which accepts five integers from the console (given by the
   // user) and store them in an array print out the memory addresses of the
   // elements in the array
 

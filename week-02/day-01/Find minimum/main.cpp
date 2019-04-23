@@ -3,7 +3,7 @@
 int *minimum(int[], int);
 
 int main() {
-  // Create a function which takes an array (and its length) as a parameter
+  //Create a function which takes an array (and its length) as a parameter
   // and returns a pointer to its minimum value
 
   int numbers[7] = {12, 4, 66, 101, 87, 3, 15};
