@@ -1,7 +1,7 @@
 #include <SDL.h>
 #include <iostream>
 
-// Screen dimension constants
+//Screen dimension constants
 const int SCREEN_WIDTH = 480;
 const int SCREEN_HEIGHT = 480;
 
