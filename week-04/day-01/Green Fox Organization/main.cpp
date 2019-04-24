@@ -4,41 +4,24 @@
 #include "Sponsor.h"
 #include "Student.h"
 #include <iostream>
-#include <vector>
 
 int main() {
-  Person person("Jane Doe", 30, FEMALE);
-  person.introduce();
-  person.getGoal();
-  Student student("Jane Doe", 30, FEMALE, "The School of Life", 0);
-  student.introduce();
-  student.getGoal();
-  student.skipDays();
-  Mentor mentor("Jane Doe", 30, FEMALE, INTERMEDIATE);
-  mentor.introduce();
-  mentor.getGoal();
-  Sponsor sponsor("Jane Doe", 30, FEMALE, "Google", 0);
-  sponsor.introduce();
-  sponsor.getGoal();
-  sponsor.hire();
-
   std::vector<Person *> people;
-
-  Person mark("Mark", 46, MALE);
+  Person mark("Mark", 46, Gender::MALE);
   people.push_back(&mark);
   Person jane;
   people.push_back(&jane);
-  Student john("John Doe", 20, MALE, "BME");
+  Student john("John Doe", 20, Gender::MALE, "BME");
   people.push_back(&john);
   Student student;
   people.push_back(&student);
-  Mentor gandhi("Gandhi", 148, MALE, SENIOR);
+  Mentor gandhi("Gandhi", 148, Gender::MALE, Level::SENIOR);
   people.push_back(&gandhi);
   Mentor mentor;
   people.push_back(&mentor);
   Sponsor sponsor;
   people.push_back(&sponsor);
-  Sponsor elon("Elon Musk", 46, MALE, "SpaceX");
+  Sponsor elon("Elon Musk", 46, Gender::MALE, "SpaceX");
   people.push_back(&elon);
 
   student.skipDays(3);
@@ -62,8 +45,4 @@ int main() {
   awesome.addMentor(&mentor);
   awesome.addMentor(&gandhi);
   awesome.info();
-
-  return 0;
 }
-
-//////////////////////////

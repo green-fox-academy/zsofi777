@@ -1,26 +1,34 @@
-#ifndef GREEN_FOX_ORGANIZATION_PERSON_H
-#define GREEN_FOX_ORGANIZATION_PERSON_H
+#ifndef GREENFOXORGANIZATION_PERSON_H
+#define GREENFOXORGANIZATION_PERSON_H
 
+#include <iostream>
 #include <string>
 
-enum Gender { MALE, FEMALE };
+enum Gender {
+  MALE,
+  FEMALE
+};
+
 
 class Person {
+public:
+  Person();
+  Person(std::string name, int age, Gender gender);
+  std::string getName() const;
+  void setName(std::string name);
+  int getAge() const;
+  void setAge(int age);
+  Gender getGender() const;
+  void setGender(Gender gender);
+  std::string translateGender(Gender gender);
+  virtual void introduce();
+  virtual void getGoal();
+
 private:
   std::string _name;
   int _age;
   Gender _gender;
-
-public:
-  Person(std::string name, int age, Gender gender);
-  virtual void introduce();
-  virtual void getGoal();
-  std::string genderAsString();
-  const std::string &getName() const;
-  int getAge() const;
-  Gender getGender() const;
 };
 
-#endif // GREEN_FOX_ORGANIZATION_PERSON_H
 
-//////////////////////////
+#endif //GREENFOXORGANIZATION_PERSON_H

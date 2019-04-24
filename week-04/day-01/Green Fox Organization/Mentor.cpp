@@ -1,21 +1,31 @@
 #include "Mentor.h"
-#include "Person.h"
-#include <iostream>
+
+Mentor::Mentor() : Person() { _level = INTERMEDIATE; }
 
 Mentor::Mentor(std::string name, int age, Gender gender, Level level)
     : Person(name, age, gender) {
   _level = level;
 }
-void Mentor::introduce() {
-  std::cout << "Hi, my name is " << getName() << ", I'm a " << getAge()
-            << " years old " << genderAsString() << ' ' << levelAsString()
-            << " mentor" << std::endl;
-}
+
+Level Mentor::getLevel() const { return _level; }
+
+void Mentor::setLevel(Level level) { _level = level; }
+
 void Mentor::getGoal() {
   std::cout << "My goal is: Educate brilliant junior software developers."
             << std::endl;
 }
-std::string Mentor::levelAsString() {
+
+void Mentor::introduce() {
+  // std::cout << "Hi, I'm " << getName() << ", a " << getAge() << " year old "
+  // <<  translateGender(getGender()) << " " << translateLevel(getLevel()) << "
+  // level mentor." << std::endl;
+  Person::introduce();
+  std::cout << " " << translateLevel(getLevel()) << " level mentor."
+            << std::endl;
+}
+
+std::string Mentor::translateLevel(Level level) {
   switch (_level) {
   case JUNIOR:
     return "junior";
@@ -25,7 +35,3 @@ std::string Mentor::levelAsString() {
     return "senior";
   }
 }
-
-Level Mentor::getLevel() const { return _level; }
-
-//////////////////////////

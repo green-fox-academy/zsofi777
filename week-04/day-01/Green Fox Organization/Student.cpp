@@ -1,23 +1,38 @@
 #include "Student.h"
-#include "Person.h"
-#include <iostream>
+
+Student::Student() : Person() {
+  _previousOrganization = "The school of life";
+  _skippedDays = 0;
+}
 
 Student::Student(std::string name, int age, Gender gender,
-                 std::string previousOrganization, int skippedDays)
+                 std::string previousOrganization)
     : Person(name, age, gender) {
   _previousOrganization = previousOrganization;
-  _skippedDays = skippedDays;
+  _skippedDays = 0;
 }
 
-void Student::introduce() {
-  std::cout << "Hi, my name is " << getName() << ", I'm a " << getAge()
-            << " years old " << genderAsString() << ", I learn at "
-            << _previousOrganization << ", and I skipped " << _skippedDays
-            << " days from the course already" << std::endl;
+std::string Student::getPreviousOrganization() const {
+  return _previousOrganization;
 }
+
+void Student::setPreviousOrganization(std::string previousOrganization) {
+  _previousOrganization = previousOrganization;
+}
+
+int Student::getSkippedDays() const { return _skippedDays; }
+
+void Student::setSkippedDays(int skippedDays) { _skippedDays = skippedDays; }
+
 void Student::getGoal() {
   std::cout << "My goal is: Be a junior software developer." << std::endl;
 }
-void Student::skipDays(int numberOfDays) { _skippedDays += numberOfDays; }
 
-//////////////////////////
+void Student::introduce() {
+  std::cout << "Hi, I'm " << getName() << ", a " << getAge() << " year old "
+            << translateGender(getGender()) << " from "
+            << getPreviousOrganization() << " who skipped " << getSkippedDays()
+            << " days from the course already." << std::endl;
+}
+
+void Student::skipDays(int numberOfDays) { _skippedDays += numberOfDays; }
