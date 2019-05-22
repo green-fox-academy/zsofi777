@@ -15,6 +15,8 @@
 
 *[2nd demo_DMA](https://slides.com/zsofikovago/deck-1)*
 
+*[Lightning talk_Dennis Ritchie](https://slides.com/zsofikovago/deck-2)*
+
 #  
 
 *[radars syllabus repo](https://github.com/green-fox-academy/radars-syllabus)*
