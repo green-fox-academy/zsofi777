@@ -8,16 +8,16 @@
  ******************************************************************************
  */
 
+//knight rider
+
 #include "stm32f7xx.h"
 #include "stm32746g_discovery.h"
 
-int main(void)
+void init_pins()
 {
-    HAL_Init();
-
     RCC->AHB1ENR |= RCC_AHB1ENR_GPIOFEN; /* GPIOI clock enable */
 
-    //configure 4 leds, PF7-PF10
+    //////configure 4 leds, PF7-PF10
     /* configure PF7 in output mode */
     GPIOF->MODER |= (GPIO_MODER_MODER7_0);
     /* ensure push pull mode selected default */
@@ -53,25 +53,67 @@ int main(void)
     GPIOF->OSPEEDR |= (GPIO_OSPEEDER_OSPEEDR10);
     /* ensure all pull up pull down resistors are disabled */
     GPIOF->PUPDR &= ~(GPIO_PUPDR_PUPDR10);
+}
 
-    uint16_t user_led = (1 << 7);
+int main(void)
+{
 
-    int i = 0;
+    HAL_Init();
+    init_pins();
 
-    while(1){
-        for (i = 0; i < 3; i++) {
-            GPIOF->BSRR = user_led;
+    /*uint16_t user_led = (1 << 7);
+
+     int i = 0;
+
+     while (1) {
+     for (i = 0; i < 3; i++) {
+     GPIOF->BSRR = user_led;
+     HAL_Delay(100);
+     GPIOF->BSRR = user_led << 16;
+     user_led = user_led << 1;
+     }
+     for (i = 0; i < 3; i++) {
+     GPIOF->BSRR = user_led;
+     HAL_Delay(100);
+     GPIOF->BSRR = user_led << 16;
+     user_led = user_led >> 1;
+
+     }
+     }*/
+
+    /*uint32_t red_led[] =
+    { (1 << 10), (1 << 9), (1 << 8), (1 << 7) };
+
+    int counter = 0;
+    int direction = -1;
+
+    while (1) {
+        if (counter == 3 || counter == 0)
+            direction *= -1;
+        GPIOF->BSRR = red_led[counter];
+        HAL_Delay(70);
+        GPIOF->BSRR = red_led[counter] << 16;
+        HAL_Delay(70);
+        counter += direction;
+    }*/
+
+    uint32_t led = (1 << 6);
+    uint32_t led_prev = led;
+
+    while (1) {
+        for (int i = 0; i < 4; ++i) {
+            GPIOF->BSRR = led_prev << 16;
+            led = led << 1;
+            GPIOF->BSRR = led;
             HAL_Delay(100);
-            GPIOF->BSRR = user_led << 16;
-            user_led = user_led <<1;
+            led_prev = led;
         }
-        for (i = 0; i < 3; i++) {
-            GPIOF->BSRR = user_led;
+        for (int i = 4; i > 0; --i) {
+            GPIOF->BSRR = led_prev << 16;
+            led = led >> 1;
+            GPIOF->BSRR = led;
             HAL_Delay(100);
-            GPIOF->BSRR = user_led << 16;
-            user_led = user_led >>1;
-
+            led_prev = led;
         }
     }
 }
-
