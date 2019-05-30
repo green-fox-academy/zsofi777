@@ -1,29 +1,8 @@
-/**
- ******************************************************************************
- * @file    main.c
- * @author  Ac6
- * @version V1.0
- * @date    01-December-2013
- * @brief   Default main function.
- ******************************************************************************
- */
-
-/**
- ******************************************************************************
- * @file    main.c
- * @author  Ac6
- * @version V1.0
- * @date    01-December-2013
- * @brief   Default main function.
- ******************************************************************************
- */
-
 #include "stm32f7xx.h"
 #include "stm32746g_discovery.h"
 
 /* necessary include files */
-#include "stm32746g_discovery_lcd.h"
-#include "stm32746g_discovery_ts.h"
+#include "stm32746g_discovery_lcd.h" // Feel free to look inside and explore!
 
 static void Error_Handler(void);
 static void SystemClock_Config(void);
@@ -32,10 +11,10 @@ void LCD_Init()
 {
     BSP_LCD_Init();
     BSP_LCD_LayerDefaultInit(1, LCD_FB_START_ADDRESS);
-    BSP_LCD_SelectLayer(1); //storage,usually 1
-    BSP_LCD_SetFont(&LCD_DEFAULT_FONT); //text color,size
-    BSP_LCD_SetBackColor(LCD_COLOR_WHITE); //text bacground
-    BSP_LCD_Clear(LCD_COLOR_WHITE); //lcd bacground
+    BSP_LCD_SelectLayer(1);
+    BSP_LCD_SetFont(&LCD_DEFAULT_FONT);
+    BSP_LCD_SetBackColor(LCD_COLOR_WHITE);
+    BSP_LCD_Clear(LCD_COLOR_WHITE);
 }
 
 int main(void)
@@ -43,33 +22,32 @@ int main(void)
     HAL_Init();
     SystemClock_Config();
     LCD_Init();
-    BSP_LED_Init(LED_GREEN);
 
     /* drawing a red circle */
     BSP_LCD_SetTextColor(LCD_COLOR_LIGHTRED); //colors 32 bit numbers (4*8 bit),0xFF(not clear)rrggbb
-    BSP_LCD_FillCircle(300, 200, 30); //50-x:from left[0],to right[500],50-y:from down[0]to up[300],30:size
+    BSP_LCD_FillCircle(420, 220, 30); //50-x:from left[0],to right[500],50-y:from down[0]to up[300],30:size
     BSP_LCD_SetTextColor(LCD_COLOR_CYAN);
     BSP_LCD_FillCircle(20, 30, 10);
-    BSP_LCD_SetTextColor(LCD_COLOR_LIGHTMAGENTA);
-    BSP_LCD_FillCircle(100, 100, 20);
     BSP_LCD_SetTextColor(LCD_COLOR_YELLOW);
-    BSP_LCD_FillCircle(80, 30, 9);
+    BSP_LCD_FillCircle(76, 100, 20);
+    BSP_LCD_SetTextColor(LCD_COLOR_LIGHTMAGENTA);
+    BSP_LCD_FillCircle(80, 40, 9);
+    BSP_LCD_SetTextColor(LCD_COLOR_LIGHTBLUE);
+    BSP_LCD_FillCircle(340, 230, 9);
+
     /* drawing text */
-    BSP_LCD_SetTextColor(LCD_COLOR_LIGHTMAGENTA); //text color
-    BSP_LCD_DisplayStringAt(40, 50, "BOLDOG 40. SZULINAPOT!!", CENTER_MODE); //50-x from left to right,50-y from up to down,mode:LEFT-RIGHT-CENTER
-
-    // The LCD display has to be initalized first!
-    BSP_TS_Init(BSP_LCD_GetXSize(), BSP_LCD_GetYSize());
-
-    TS_StateTypeDef ts_state;
-
+    BSP_LCD_SetTextColor(LCD_COLOR_BLUE);
+    BSP_LCD_SetFont(&Font16);
+    BSP_LCD_DisplayChar(263, 113, 0x2E);
+    BSP_LCD_DisplayChar(269, 113, 0x2E);
+    BSP_LCD_SetFont(&Font24);
+    BSP_LCD_DisplayStringAt(0, 125, "BOLDOG 40. SZULINAPOT!!", CENTER_MODE); //50-x from left to right,50-y from up to down,mode:LEFT-RIGHT-CENTER
+    BSP_LCD_SetFont(&Font20);
+    BSP_LCD_DisplayStringAt(190, 160, ",", LEFT_MODE);
+    BSP_LCD_SetFont(&Font24);
+    BSP_LCD_DisplayStringAt(0, 175, "(utolag is:)", CENTER_MODE);
+    BSP_LCD_DisplayStringAt(0, 220, ":D", CENTER_MODE);
     while (1) {
-        BSP_TS_GetState(&ts_state);
-        if (ts_state.touchDetected) {
-            BSP_LED_On(LED_GREEN);
-        } else {
-            BSP_LED_Off(LED_GREEN);
-        }
     }
 }
 
@@ -85,8 +63,7 @@ static void SystemClock_Config(void)
     { 0 };
 
     /**Configure the main internal regulator output voltage */
-    __HAL_RCC_PWR_CLK_ENABLE()
-    ;
+    __HAL_RCC_PWR_CLK_ENABLE();
     __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
 
     /**Initializes the CPU, AHB and APB busses clocks */
