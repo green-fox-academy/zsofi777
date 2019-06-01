@@ -16,7 +16,7 @@
 *[2nd demo_DMA](https://slides.com/zsofikovago/deck-1)*
 
 *[3rd demo_LCD](https://slides.com/zsofikovago/deck-3)*
-
+#
 *[Lightning talk_Dennis Ritchie](https://slides.com/zsofikovago/deck-2)*
 
 #  
@@ -26,3 +26,7 @@
 *[git-lesson repo](https://github.com/zsofi777/git-lesson-repository)*
 
 *[patchwork repo](https://github.com/zsofi777/patchwork)*
+
+#
+
+![#FF6F61](https://placehold.it/15/FF6F61/000000?text=+)
