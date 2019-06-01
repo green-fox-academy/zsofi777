@@ -15,6 +15,8 @@
 
 *[2nd demo_DMA](https://slides.com/zsofikovago/deck-1)*
 
+*[3rd demo_LCD](https://slides.com/zsofikovago/deck-3)*
+
 *[Lightning talk_Dennis Ritchie](https://slides.com/zsofikovago/deck-2)*
 
 #  
