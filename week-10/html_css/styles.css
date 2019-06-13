@@ -2,27 +2,35 @@ body {
     background: rgb(65, 63, 63);
     color: white;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+    margin: 0; /* margin: minden oldalról / top-bottom, left-right / top, right, bottom, left (clock) - blokk körül lesz space */
+    padding: 0; /* padding: uaz 1/2/4 érték (px/%) - szöveg körül lesz, kiterjed, blokkon belül space */
+}               /* ha body: margin zero, padding zero -> teljesen kitölti az oldalt és stretching! */
 
-/* HEADER */
+/* HEADER; semantic tags: header, nav, section, footer */
 
 header {
-    background-color: black;
+    background-color: rgb(106, 27, 143);
     background-image: url("images/background_up.jpg");
     background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
-    height: 400px;
+    height: 459px;
     text-align: center;
 }
 
 header a {
     color: white;
-    text-decoration: none;
+    font-weight: bold;
+    text-decoration: none; /*ne változzon, ha kattintok*/
     text-transform: uppercase;
     margin-top: 40px;
+}
+
+header .mobile {
+    display: none;
 }
 
 header .logo a {
@@ -33,7 +41,7 @@ header .logo a {
     top: -40px;
     display: inline-block;
     height: 80px;
-    text-indent: -9999999px;
+    text-indent: -9999999px; /* text goes far left, so not seen, but the blind can read */
     width: 300px;
 }
 
@@ -45,9 +53,34 @@ nav ul {
 
 nav li {
     display: inline-block;
-    padding: 2px;
-    margin-left: 20px;
+    margin-right: 20px;
 }
+
+nav li a.active {
+    background-color: rgb(106, 27, 143);
+    color: white;
+  }
+  
+  nav li a:hover:not(.active) {
+    background-color: black;
+    color: white;
+  }
+
+/* RESPONSIVE RULES */
+
+@media screen and (max-width: 726px) {
+    header {
+        height: 250px;
+    }
+    header .mobile {
+        display: inline-block;
+    }
+    header .desktop {
+        display: none;
+    }
+}
+
+
 
 /* FEATURES */
 
@@ -57,11 +90,13 @@ nav li {
     padding: 20px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .features figure {
     margin: auto;
     text-align: center;
+    font-weight: bold;
     text-transform: uppercase;
     width: 200px;
     color:  rgb(167, 29, 167);
@@ -70,7 +105,7 @@ nav li {
 .features figure img {
     width: 200px;
     border-radius: 50%;
-    box-shadow: rgb(54, 2, 54) 0 0 10px;
+    
 }
 
 /* FOOTER */
