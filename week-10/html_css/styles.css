@@ -60,8 +60,18 @@ nav li a.active {
     background-color: rgb(106, 27, 143);
     color: white;
   }
+
+.active.mobile { /* 1 object with 2 classes */
+    background-color: rgb(106, 27, 143);
+    color: white;
+  }  
+
+.active.desktop {
+    background-color: rgb(106, 27, 143);
+    color: white;
+  }
   
-  nav li a:hover:not(.active) {
+nav li a:hover:not(.active) {
     background-color: black;
     color: white;
   }
@@ -76,7 +86,7 @@ nav li a.active {
         display: inline-block;
     }
     header .desktop {
-        display: none;
+        display: none;  /* =hidden; initial=látható */
     }
 }
 
