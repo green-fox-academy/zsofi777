@@ -1,10 +1,10 @@
-/*var sample:string[]
+/* var sample:string[]
 
 sample=["one","two","three","four","five"]
 
 document.write(sample[2])
 document.write(sample[0])
-document.write(sample[4])*/
+document.write(sample[4]) */
 
 var matrix: number[][] = new Array();
 
