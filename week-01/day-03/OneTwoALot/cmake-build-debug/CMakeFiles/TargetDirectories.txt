@@ -1,3 +1,0 @@
-C:/Users/Szonja-asus/Documents/greenfox/week-01/day-03/OneTwoALot/cmake-build-debug/CMakeFiles/OneTwoALot.dir
-C:/Users/Szonja-asus/Documents/greenfox/week-01/day-03/OneTwoALot/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Szonja-asus/Documents/greenfox/week-01/day-03/OneTwoALot/cmake-build-debug/CMakeFiles/rebuild_cache.dir
