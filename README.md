@@ -16,6 +16,8 @@
 *[2nd demo_DMA](https://slides.com/zsofikovago/deck-1)*
 
 *[3rd demo_LCD](https://slides.com/zsofikovago/deck-3)*
+
+*[4th demo_Glitch Bitch](https://slides.com/zsofikovago/deck-4)*
 #
 *[Lightning talk_Dennis Ritchie](https://slides.com/zsofikovago/deck-2)*
 
