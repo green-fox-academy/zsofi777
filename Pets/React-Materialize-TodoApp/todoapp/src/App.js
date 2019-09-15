@@ -27,8 +27,8 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="todo-app container">
-        <h1 className="center blue-text">Todos</h1>
+      <div className="todo-app container z-depth-5">
+        <h1 className="center red-text text-accent-4">Todos</h1>
         <Todos todos={this.state.todos} deleteTodo={this.deleteTodo} />
         <AddTodo addTodo={this.addTodo} />
       </div>
