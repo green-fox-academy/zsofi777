@@ -21,13 +21,6 @@
 #
 *[Lightning talk_Dennis Ritchie](https://slides.com/zsofikovago/deck-2)*
 
-#  
-
-*[radars syllabus repo](https://github.com/green-fox-academy/radars-syllabus)*
-
-*[git-lesson repo](https://github.com/zsofi777/git-lesson-repository)*
-
-*[patchwork repo](https://github.com/zsofi777/patchwork)*
 
 #
 
